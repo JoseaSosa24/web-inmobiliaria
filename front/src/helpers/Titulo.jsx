@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const Titulo = ({children}) => {
+export const Titulo = ({classSection, children}) => {
     return (
-        <section className='section-titulo'>
+        <section className={'section-titulo '+classSection}>
             <h2 className='titulo'> {children} </h2>
         </section>
     )
