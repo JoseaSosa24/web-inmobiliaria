@@ -18,25 +18,18 @@ const Menu = () => {
 
 
     return (
-        <nav className={`navbar navbar-expand-lg bg-body-tertiary fixed-top  ${scrolled ? "nav-scrolled" : ""}`}>
-            <section className="container-fluid">
+        <nav className={`navbar navbar-expand-lg bg-body-tertiary fixed-top `}>
+            <section className="container-fluid ">
                 <a className="navbar-brand" href="#">
-                    <img className="logo" src="../../../src/assets/icons/logo.png" width={150} />
+                    <img className="logo" src="../../../src/assets/icons/logo.png" width={100} />
                 </a>
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <section className="collapse navbar-collapse" id="navbarNavDropdown">
+                <section className="collapse navbar-collapse " id="navbarNavDropdown">
                     <MenuLista />
                 </section>
+
             </section>
         </nav>
     );
