@@ -1,0 +1,23 @@
+.anuncios {
+  background-color: rgb(10, 117, 141) !important;
+  min-height: 100vh !important;
+  width: 100% !important;
+  background-color: #f2f2f2;
+  transition: all 0.5s ease-in-out;
+  padding: 2rem;
+}
+
+.contenedor-anuncios {
+  display: flex;
+  flex-direction: column;
+  
+ /*  background-color: black; */
+  width: 100%;
+}
+contenedor-carrusel{
+
+}
+
+.section-titulo {
+  padding-top: 6%;
+}
