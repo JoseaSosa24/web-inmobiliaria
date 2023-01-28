@@ -5,19 +5,55 @@
   background-color: #f2f2f2;
   transition: all 0.5s ease-in-out;
   padding: 2rem;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-
 .contenedor-anuncios {
+ /*  padding: 20rem; */
   display: flex;
   flex-direction: column;
-  
- /*  background-color: black; */
   width: 100%;
 }
-contenedor-carrusel{
-
+.contenedor-carrusel {
+  width: 75%;
+  background-color: antiquewhite;
+  display: flex !important;
+  align-items: center;
 }
-
 .section-titulo {
   padding-top: 6%;
+  width: 90%;
+  border: 1px solid black;
+}
+.anuncio-item {
+  height: 72vh;
+  display: flex !important;
+  flex-direction: row !important;
+  /* justify-content: space-between !important; */
+  justify-content: center;
+}
+
+.contenedor-img {
+  width: 100%;
+  background-color: rgb(23, 148, 148);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anuncio-info {
+  width: 70%;
+  background-color: thistle;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.anuncio-img {
+  height: 100%;
+  width: 100%;
+  /*  object-fit: cover; */
 }

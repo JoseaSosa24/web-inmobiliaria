@@ -11,40 +11,57 @@ export const Anuncios = () => {
         infinite: true, // hacer que el carrusel sea infinito
         speed: 500, // tiempo de transición en milisegundos
         slidesToShow: 1, // número de elementos a mostrar en el carrusel
-        slidesToScroll: 1 // número de elementos a desplazar cada vez
+        slidesToScroll: 1,// número de elementos a desplazar cada vez
+        
+
     };
 
     return (
         <>
-
             <section className='anuncios d-flex flex-column justify-content-center' id='anuncios'>
-                <Titulo children={"Anuncios"} />
-                <section className='contenedor-anuncios'>
-                        <div className=''>
-                            <h2> Single Item</h2>
-                            <Slider className='contenedor-carrusel' {...settings}>
-                                <div>
-                                    <h3>1</h3>
-                                </div>
-                                <div>
-                                    <h3>2</h3>
-                                </div>
-                                <div>
-                                    <h3>3</h3>
-                                </div>
-                                <div>
-                                    <h3>4</h3>
-                                </div>
-                                <div>
-                                    <h3>5</h3>
-                                </div>
-                                <div>
-                                    <h3>6</h3>
-                                </div>
-                            </Slider>
+               
+                    <Titulo children={"Anuncios"} />
+                    <Slider className='contenedor-carrusel' {...settings}>
+                        <div className="anuncio-item">
+                            <div className='contenedor-img'>
+                                <img src={"../../../../src/assets/img/img-anuncios/img-anuncio-1.jpg"} alt="Anuncio 1" className="anuncio-img" />
+                            </div>
+
+                            <div className="anuncio-info">
+                                <h4 className="anuncio-title">Casa urbana clásica
+                                    3 dormitorios con aparcamiento y patio trasero</h4>
+                                <p className="anuncio-description">Atrae a compradores potenciales con una descripción por escrito clara
+                                    que enumere las características más atractivas de tu propiedad.</p>
+                                <button className='anuncio-btn'>Consultanos ya</button>
+                            </div>
                         </div>
+                        <div className="anuncio-item">
+                            <div className='contenedor-img'>
+                                <img src={"../../../../src/assets/img/img-anuncios/img-anuncio-2.png"} alt="Anuncio 1" className="anuncio-img" />
+                            </div>
+                            <div className="anuncio-info">
+                                <h4 className="anuncio-title">Casa urbana clásica
+                                    3 dormitorios con aparcamiento y patio trasero</h4>
+                                <p className="anuncio-description">Atrae a compradores potenciales con una descripción por escrito clara
+                                    que enumere las características más atractivas de tu propiedad.</p>
+                                <button>Consultanos ya</button>
+                            </div>
+                        </div>
+                        <div className="anuncio-item">
+                            <div className='contenedor-img'>
+                                <img src={"../../../../src/assets/img/img-anuncios/img-anuncio-3.png"} alt="Anuncio 1" className="anuncio-img" />
+                            </div>
+                            <div className="anuncio-info">
+                                <h4 className="anuncio-title">Casa urbana clásica
+                                    3 dormitorios con aparcamiento y patio trasero</h4>
+                                <p className="anuncio-description">Atrae a compradores potenciales con una descripción por escrito clara
+                                    que enumere las características más atractivas de tu propiedad.</p>
+                                <button>Consultanos ya</button>
+                            </div>
+                        </div>
+                    </Slider>
                 </section>
-            </section>
+           
         </>
     )
 }
