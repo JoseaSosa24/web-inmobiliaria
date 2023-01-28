@@ -1,0 +1,35 @@
+{
+    "anuncios": [
+        {
+            "id": 1,
+            "img": "../../../../src/assets/img/img-anuncios/img-anuncio-1.jpg",
+            "titulo": "Espectacular apartamento de lujo",
+            "descripcion": "Este impresionante apartamento de lujo cuenta con una ubicación privilegiada en el centro de la ciudad, con vistas panorámicas impresionantes y una amplia gama de servicios de lujo."
+        },
+        {
+            "id": 2,
+            "img": "../../../../src/assets/img/img-anuncios/img-anuncio-2.png",
+            "titulo": "8000 metros cuadrados en Santa Solana",
+            "descripcion": "Atrae a compradores potenciales con una descripción por escrito clara que enumere las características más atractivas de tu propiedad."
+        },
+        {
+            "id": 3,
+            "img": "../../../../src/assets/img/img-anuncios/img-anuncio-3.png",
+            "titulo": "Casa de campo con amplio jardín",
+            "descripcion": "Este encantador hogar de campo ofrece una gran cantidad de espacio al aire libre en su amplio jardín. Con una amplia sala de estar, cocina moderna y varias habitaciones, esta casa es ideal para una gran familia."
+        },
+        {
+            "id": 4,
+            "img": "../../../../src/assets/img/img-anuncios/img-anuncio-4.png",
+            "titulo": "Apartamento de 2 dormitorios en Belden Park",
+            "descripcion": "Atrae a compradores potenciales con una descripción por escrito clara que enumere las características más atractivas de tu propiedad."
+        },
+        {
+            "id": 5,
+            "img": "../../../../src/assets/img/img-anuncios/img-anuncio-5.png",
+            "titulo": "Casa urbana clásica 3 dormitorios con aparcamiento y patio trasero",
+            "descripcion": "Atrae a compradores potenciales con una descripción por escrito clara que enumere las características más atractivas de tu propiedad."
+        }
+       
+    ]
+}
