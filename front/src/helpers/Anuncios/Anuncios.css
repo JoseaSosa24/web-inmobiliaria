@@ -8,6 +8,17 @@
   justify-content: center;
   align-items: center;
 }
+.section-titulo {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.section-titulo .titulo {
+  color: #bf7f30;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
 
 .anuncio-item {
   display: flex;
@@ -77,8 +88,8 @@
 }
 
 @media (min-width: 1920px) {
-  .anuncio-title {
-    font-size: 2.5rem;
+  .section-titulo .titulo {
+    font-size: 6rem;
   }
 
   .anuncio-description {
@@ -88,7 +99,7 @@
 
 @media (min-width: 3840px) {
   .anuncio-title {
-    font-size: 3.8rem;
+    font-size: 4rem;
   }
 
   .anuncio-description {
@@ -123,7 +134,9 @@
     border-radius: 10px;
     /* flex-wrap: wrap; */
   }
-
+  .section-titulo .titulo {
+    font-size: 1.8rem;
+  }
   .anuncio-title {
     font-size: 1.2rem;
     font-weight: 600;
