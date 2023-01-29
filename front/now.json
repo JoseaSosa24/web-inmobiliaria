@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "public/**/*",
+        "use": "@now/static"
+      },
+      {
+        "src": "package.json",
+        "use": "@now/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "./index.html"
+      }
+    ]
+  }
+  
