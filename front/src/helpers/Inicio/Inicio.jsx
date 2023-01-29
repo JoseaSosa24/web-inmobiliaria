@@ -1,10 +1,11 @@
 import React from 'react';
-import { Carousel } from 'bootstrap';
 import './Inicio.css'
+import imgInicio from '../../../src/assets/img/inicio.jpg'
+
 const Inicio = () => {
     return (
         <section className='inicio' id='inicio'>
-            <img className="" src="../../../src/assets/img/inicio.jpg" />
+            <img className="" src={imgInicio} />
             <div className="home-text-container">
                 <h1>Bienvenido a mi sitio</h1>
             </div>
