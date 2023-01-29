@@ -11,7 +11,7 @@ export const Anuncios = () => {
     const [datosAnuncios, setDatosAnuncios] = useState([]);
 
     useEffect(() => {
-        fetch('../../../src/json/anuncios.json')
+        fetch('./src/json/anuncios.json')
             .then(response => response.json())
             .then(datosAnuncios => setDatosAnuncios(datosAnuncios.anuncios))
     }, []);
