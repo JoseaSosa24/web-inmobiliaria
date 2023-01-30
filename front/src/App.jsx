@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Inicio from './helpers/Inicio/Inicio'
 import Nosotros from './helpers/Nosotros/Nosotros'
 import { Anuncios } from './helpers/Anuncios/Anuncios'
+import { Servicios } from './helpers/Servicios/Servicios'
+import { Contacto } from './helpers/Contacto/Contacto'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,10 +14,11 @@ function App() {
   return (
     <div className="App">
       <Menu />
-      <Inicio/>
-      <Nosotros/>
-      <Anuncios/>
-      
+      <Inicio />
+      <Nosotros />
+      <Anuncios />
+      <Servicios />
+      <Contacto />
     </div>
   )
 }
