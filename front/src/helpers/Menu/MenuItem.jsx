@@ -23,7 +23,7 @@ export const MenuItem = ({ link, nombreItem, active, dropdown, children }) => {
                 ) :
                 (
                     // se crea un elemento 'a' con clases 'nav-link' y si 'active' es verdadero, se agrega la clase 'active'
-                    <a className={`nav-link ${active ? 'active' : ''}`} onClick={handleMenuItemClick} aria-current="page" href={link}>
+                    <a className={`nav-link text-white ${active ? 'active' : ''}`} onClick={handleMenuItemClick} aria-current="page" href={link}>
                         {/* // se muestra el nombre del item en el elemento 'a' */}
                         {nombreItem}
                     </a>
