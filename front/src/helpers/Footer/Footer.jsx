@@ -13,30 +13,31 @@ export const Footer = () => {
                 </div>
                 <div className='footer-location'>
                     <h4>Ubicación</h4>
-                    <p>Calle Vista Alegre, 13,
+                    <p className='text-muted' >Calle Vista Alegre, 13,
                         Valencia, C. P. 10445</p>
                 </div>
                 <div className='footer-contact'>
                     <h4>Contacto</h4>
-                    <p>Teléfono: +123 456 7890</p>
+                    <p className='text-muted'>Teléfono: +123 456 7890</p>
                 </div>
                 <div className='footer-social'>
                     <h4>Redes sociales</h4>
                     <div className='footer-social-icons'>
-                        <a href='https://facebook.com/inmoweb'>
+                        <a href=''>
                             <FaFacebookSquare />
                         </a>
-                        <a href='https://twitter.com/inmoweb'>
+                        <a href=''>
                             <FaTwitterSquare />
                         </a>
-                        <a href='https://instagram.com/inmoweb'>
+                        <a href=''>
                             <FaInstagram />
                         </a>
                     </div>
                 </div>
             </div>
-            <div className='footer-copyright'>
+            <div className='footer-copyright text-muted'>
                 <p>Copyright &copy; Inmo Web Todos los derechos reservados</p>
+                <p>&copy; Relizada por <a href='https://www.linkedin.com/in/jose-armando-sosa-cardona/' target="_blank"> José Sosa</a> </p>
             </div>
         </footer>
     )
