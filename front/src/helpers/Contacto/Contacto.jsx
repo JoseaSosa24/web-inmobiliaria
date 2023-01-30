@@ -16,12 +16,10 @@ export const Contacto = () => {
                         <input type="tel" placeholder="Celular" required />
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Motivo de la solicitud" required></textarea>
+                        <textarea placeholder="Motivo de la solicitud"  required></textarea>
                     </div>
 
                     <button type="submit">Enviar</button>
-
-
                 </form>
             </div>
         </section>
