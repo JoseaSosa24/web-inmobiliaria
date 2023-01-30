@@ -8,7 +8,7 @@ export const Contacto = () => {
 
                 <h2 className="form-title">contacto</h2>
                 <form className="form">
-                    <p classNameName="form-parrafo" id='form-parrafo'>Nuestro negocio no es vender propiedades, sino ayudar a nuestro cliente a tomar la decisión perfecta.</p>
+                    <p className="form-parrafo" id='form-parrafo'>Nuestro negocio no es vender propiedades, sino ayudar a nuestro cliente a tomar la decisión perfecta.</p>
                     <div className="form-group">
                         <input type="text" placeholder="Nombre" required />
                     </div>
