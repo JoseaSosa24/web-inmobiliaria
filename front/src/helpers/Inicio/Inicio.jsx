@@ -1,17 +1,17 @@
 import React from 'react';
 import './Inicio.css'
-import imgInicio from '../../../src/assets/img/inicio.jpg'
+import imgInicio from '/src/assets/img/inicio.jpg'
 
-const Inicio = () => {
-    return (
-        <section className='inicio' id='inicio'>
-            <img className="" src={imgInicio} />
-            <div className="home-text-container">
-                <h1>Haciendo realidad casas soñadas.</h1>
-                <h5>Tu sueño, nuestra realidad</h5>
-            </div>
-        </section>
-    );
-}
+const Inicio = () => (
+    <section className="inicio" id="inicio">
+        <img className="inicio-img" src={imgInicio} alt="Imagen de inicio" />
+        <div className="home-text-container">
+            <h1 className="inicio-titulo">Haciendo realidad casas soñadas</h1>
+            <h5 className="inicio-parrafo">Tu sueño, nuestra realidad</h5>
+            <a href="#contacto" className="inicio-btn">¡Consútanos ya!</a>
+        </div>
+    </section>
+);
+
 
 export default Inicio;
