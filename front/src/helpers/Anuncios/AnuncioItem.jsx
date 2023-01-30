@@ -7,7 +7,7 @@ export const AnuncioItem = ({ anuncio }) => {
             <div className="anuncio-info">
                 <h4 className="anuncio-title">{anuncio.titulo}</h4>
                 <p className="anuncio-description">{anuncio.descripcion}</p>
-                <a href="" className='anuncio-btn'>¡Consultanos ya!</a>
+                <a href="#contacto" className='anuncio-btn'>¡Consultanos ya!</a>
             </div>
         </div>
     )
