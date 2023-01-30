@@ -56,16 +56,6 @@ export const Anuncios = () => {
             .then(datosAnuncios => setDatosAnuncios(datosAnuncios.anuncios))
     }, []);
 
-    const settings = {
-        dots: true, // mostrar puntos debajo del carrusel
-        infinite: true, // hacer que el carrusel sea infinito
-        speed: 500, // tiempo de transición en milisegundos
-        slidesToShow: 1, // número de elementos a mostrar en el carrusel
-        slidesToScroll: 1,// número de elementos a desplazar cada vez
-
-
-    };
-
     return (
         <>
             <section className='anuncios d-flex flex-column justify-content-center' id='anuncios'>
