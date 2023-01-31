@@ -87,23 +87,40 @@
   color: rgb(251, 251, 251);
 }
 
+
+@media (min-width: 3840px) {
+  .section-titulo .titulo {
+    font-size: 8rem !important;
+  }
+  .anuncio-title{
+    font-size: 5.3rem !important;
+  }
+
+
+  .anuncio-description {
+    font-size: 3.7rem !important;
+  }
+  .anuncio-btn {
+    font-size: 3.8rem !important ;
+    padding: 1.2rem 2rem;
+    border-radius: 15px;
+  }
+}
+
 @media (min-width: 1920px) {
   .section-titulo .titulo {
     font-size: 6rem;
   }
+  .anuncio-title{
+    font-size: 2.6rem;
+  }
+
 
   .anuncio-description {
     font-size: 2rem;
   }
-}
-
-@media (min-width: 3840px) {
-  .anuncio-title {
-    font-size: 4rem;
-  }
-
-  .anuncio-description {
-    font-size: 3rem;
+  .anuncio-btn {
+    font-size: 2rem ;
   }
 }
 
@@ -179,5 +196,9 @@
   }
   .anuncio-item {
     border-radius: 10px;
+  }
+  
+  .anuncio-btn {
+    font-size: 0.7rem ;
   }
 }
