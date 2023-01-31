@@ -12,9 +12,7 @@ import dotenv from 'dotenv';
 
 export const Anuncios = () => {
 
-    const [datosAnuncios, setDatosAnuncios] = useState([]);
-    
-    const anuncios= {
+    const anuncios = {
         "anuncios": [
             {
                 "id": 1,
@@ -26,7 +24,7 @@ export const Anuncios = () => {
                 "id": 2,
                 "img": "https://i.postimg.cc/dVyZ000y/img-anuncio-2.png",
                 "titulo": "8000 metros cuadrados en Santa Solana",
-                "descripcion": "Atrae a compradores potenciales con una descripción por escrito clara que enumere las características más atractivas de tu propiedad."
+                "descripcion": "Terreno de 8000 m² en Santa Solana, perfecto para construir tu hogar o inversión en una ubicación privilegiada."
             },
             {
                 "id": 3,
@@ -38,23 +36,17 @@ export const Anuncios = () => {
                 "id": 4,
                 "img": "https://i.postimg.cc/50xXpqSB/img-anuncio-4.png",
                 "titulo": "Apartamento de 2 dormitorios en Belden Park",
-                "descripcion": "Atrae a compradores potenciales con una descripción por escrito clara que enumere las características más atractivas de tu propiedad."
+                "descripcion": "Apartamento de 2 habitaciones con estilo moderno y acogedor en el animado barrio de Belden Park. Ideal para vivir y disfrutar de la vibrante vida urbana."
             },
             {
                 "id": 5,
                 "img": "https://i.postimg.cc/HL1c8CJP/img-anuncio-5.png",
                 "titulo": "Casa urbana clásica 3 dormitorios con aparcamiento y patio trasero",
-                "descripcion": "Atrae a compradores potenciales con una descripción por escrito clara que enumere las características más atractivas de tu propiedad."
+                "descripcion": "Esta hermosa casa urbana clásica cuenta con 3 dormitorios, aparcamiento y un patio trasero. Ideal para los que desean un hogar cómodo y elegante con espacio adicional al aire libre."
             }
-           
+
         ]
     };
-
-    useEffect(() => {
-        fetch('./src/json/anuncios.json')
-            .then(response => response.json())
-            .then(datosAnuncios => setDatosAnuncios(datosAnuncios.anuncios))
-    }, []);
 
     return (
         <>
