@@ -31,7 +31,6 @@
 }
 .nav-scrolled a {
   color: rgb(0, 0, 0) !important;
-  
 }
 
 .fadeOut {
@@ -49,4 +48,36 @@
     opacity: 0;
     display: none;
   }
+}
+
+@media (min-width: 3840px) {
+  .navbar {
+    height: 10%;
+  }
+
+  .nav-link {
+    font-size: 2.7rem ;
+    padding: 0.7rem 1.2rem;
+  }
+  .logo {
+    width: 120%;
+  }
+}
+
+@media (min-width: 1920px){
+  .navbar {
+    height: 8% ;
+  }
+
+  .nav-link {
+    font-size: 2rem !important;
+    padding: 0.6rem 0.8rem !important;
+  }
+  .logo {
+    width: 98%;
+  }
+}
+
+@media screen {
+  
 }
