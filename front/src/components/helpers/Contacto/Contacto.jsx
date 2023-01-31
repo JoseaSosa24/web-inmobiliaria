@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import './Contacto.css'
-import { TextField } from '/src/helpers/Formulario/Form';
+import { TextField } from '/src/components/helpers/Formulario/Form';
 
 
 
