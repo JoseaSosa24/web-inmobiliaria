@@ -1,23 +1,23 @@
 /* Estilos generales */
 .navbar {
-  background-color: transparent !important;
-  color: white !important;
-  padding: 0.5rem 1rem !important;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2) !important;
-  transition: background 0.5s ease !important;
+  background-color: transparent ;
+  color: white;
+  padding: 0.5rem 1rem ;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2) ;
+  transition: background 0.5s ease ;
 }
 .navbar-brand img {
-  transition: transform 0.5s ease !important;
+  transition: transform 0.5s ease ;
 }
 .navbar-brand img:hover {
-  transform: rotate(360deg) !important;
+  transform: rotate(360deg) ;
 }
 
 /* Estilos para los elementos de la barra de navegación */
 .nav-link {
-  font-size: 1.2rem !important;
-  padding: 0.5rem 1rem !important;
-  transition: background-color 0.5s ease, color 0.5s ease !important;
+  font-size: 1.5rem ;
+  padding: 0.5rem 1rem ;
+  transition: background-color 0.5s ease, color 0.5s ease ;
 }
 .nav-link:hover {
   /*  background-color: rgba(255, 255, 255, 0.1) !important; */
@@ -26,8 +26,8 @@
 
 .nav-scrolled {
   color: rgb(4, 4, 4) !important;
-  background-color: #f2f2f2 !important;
-  transition: background 0.5s ease !important;
+  background-color: #f2f2f2 ;
+  transition: background 0.5s ease;
 }
 .nav-scrolled a {
   color: rgb(0, 0, 0) !important;
@@ -52,31 +52,31 @@
 
 @media (min-width: 3840px) {
   .navbar {
-    height: 10%;
+    height: 8%;
   }
 
   .nav-link {
-    font-size: 2.7rem ;
+    font-size: 2rem  !important;
     padding: 0.7rem 1.2rem;
   }
   .logo {
-    width: 120%;
+    width: 110%;
   }
 }
 
-@media (min-width: 1920px){
+/* @media (min-width: 1920px){
   .navbar {
     height: 8% ;
   }
 
   .nav-link {
-    font-size: 2rem !important;
-    padding: 0.6rem 0.8rem !important;
+    font-size: 3rem !important;
+    padding: 0.6rem 0.8rem ;
   }
   .logo {
     width: 98%;
   }
-}
+} */
 
 @media screen {
   
