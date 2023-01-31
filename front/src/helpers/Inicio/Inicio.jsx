@@ -8,7 +8,7 @@ const Inicio = () => (
         <div className="home-text-container">
             <h1 className="inicio-titulo">Haciendo realidad casas soñadas</h1>
             <h5 className="inicio-parrafo">Tu sueño, nuestra realidad</h5>
-            <a href="#contacto" className="inicio-btn">¡Consútanos ya!</a>
+            <a href="#contacto" className="inicio-btn">¡Consúltanos ya!</a>
         </div>
     </section>
 );

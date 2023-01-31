@@ -48,7 +48,7 @@ export const Servicios = () => {
             <section className='contenedor-cards'>
                 {servicios.map((servicio, i) => <Servicio key={i} {...servicio} />)}
             </section>
-            <a href="#contacto" className='servicio-btn'>¡Consultanos ya!</a>
+            <a href="#contacto" className='servicio-btn'>¡Consúltanos ya!</a>
         </section>
     )
 }
