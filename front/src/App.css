@@ -1,0 +1,8 @@
+.btn {
+  position: fixed !important;
+  bottom: 20px;
+  right: 20px;
+  background: #bf7839 !important;
+  cursor: pointer;
+  z-index: 999;
+}
