@@ -3,42 +3,67 @@ import { FaFacebookSquare, FaTwitterSquare, FaInstagram } from 'react-icons/fa'
 import './Footer.css'
 import logo from '/src/assets/icons/logo.png'
 
+const FooterLogo = ({ logo, alt }) => (
+
+    <div className='footer-logo'>
+        <img src={logo} alt={alt} />
+    </div>
+)
+const FooterLocation = ({ location, address }) => (
+
+    <div className='footer-location'>
+        <h4>{location}</h4>
+        <p className='text-muted'>{address}</p>
+    </div>
+)
+const FooterContact = ({ contact, phone }) => (
+
+    <div className='footer-contact'>
+        <h4>{contact}</h4>
+        <p className='text-muted'>{phone}</p>
+    </div>
+)
+const FooterSocial = ({ social, icons }) => (
+
+    <div className='footer-social'>
+        <h4>{social}</h4>
+        <div className='footer-social-icons'>
+            {icons.map(({ href, Icon }) => (
+                <a href={href} key={href}>
+                    <Icon />
+                </a>
+            ))}
+        </div>
+    </div>
+)
+const FooterCopyright = ({ copyright, createdBy, link }) => (
+
+    <div className='footer-copyright text-muted'>
+        <p>{copyright}</p>
+        <p>{createdBy} <a href={link} target="_blank"> José Sosa</a></p>
+    </div>
+)
 export const Footer = () => {
     return (
         <footer className='footer'>
             <div className='footer-container'>
-                <div className='footer-logo'>
-                    <img src={logo} alt='Inmo Web Logo' />
-
-                </div>
-                <div className='footer-location'>
-                    <h4>Ubicación</h4>
-                    <p className='text-muted' >Calle Vista Alegre, 13,
-                        Valencia, C. P. 10445</p>
-                </div>
-                <div className='footer-contact'>
-                    <h4>Contacto</h4>
-                    <p className='text-muted'>Teléfono: +123 456 7890</p>
-                </div>
-                <div className='footer-social'>
-                    <h4>Redes sociales</h4>
-                    <div className='footer-social-icons'>
-                        <a href=''>
-                            <FaFacebookSquare />
-                        </a>
-                        <a href=''>
-                            <FaTwitterSquare />
-                        </a>
-                        <a href=''>
-                            <FaInstagram />
-                        </a>
-                    </div>
-                </div>
+                <FooterLogo logo={logo} alt='Inmo Web Logo' />
+                <FooterLocation location='Ubicación' address='Calle Vista Alegre, 13, Valencia, C.P. 10445' />
+                <FooterContact contact='Contacto' phone='Teléfono: +123 456 7890' />
+                <FooterSocial
+                    social='Redes sociales'
+                    icons={[
+                        { href: '', Icon: FaFacebookSquare },
+                        { href: '', Icon: FaTwitterSquare },
+                        { href: '', Icon: FaInstagram },
+                    ]}
+                />
             </div>
-            <div className='footer-copyright text-muted'>
-                <p>Copyright &copy; Inmo Web Todos los derechos reservados</p>
-                <p>&copy; Relizada por <a href='https://www.linkedin.com/in/jose-armando-sosa-cardona/' target="_blank"> José Sosa</a> </p>
-            </div>
+            <FooterCopyright
+                copyright='Copyright © Inmo Web Todos los derechos reservados'
+                createdBy='Relizada por'
+                link='https://www.linkedin.com/in/jose-armando-sosa-cardona/'
+            />
         </footer>
     )
 }
