@@ -47,7 +47,7 @@
   color: #bf7839;
   text-shadow: 1px 1px #ccc;
 }
-#form-parrafo {
+.form-parrafo {
   width: 80%;
   color: #bf7f30;
   font-weight: bold;
@@ -57,16 +57,17 @@
 
 .form-group {
   width: 85%;
-  margin-bottom: 2.5%;
-  margin-top: 2%;
+  height: 75px;
+  /*  margin-bottom: 2.5%;
+  margin-top: 2%; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
 input,
 textarea {
-  background-color: #BF7839 !important;
+  background-color: #bf7839 !important;
   width: 100%;
   padding: 1.3%;
   font-size: 1.2em;
@@ -79,16 +80,29 @@ textarea {
   transition: all 0.2s ease-in-out;
   outline: none;
 }
+
+
+.form-text-area {
+  width: 85%;
+}
+
 .form textarea {
   height: 150px;
   resize: none;
 }
+.mensaje {
+  font-size: 10pt;
+  text-align: start;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(168, 6, 6);
+}
 
 input::placeholder {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.621);
 }
 textarea::placeholder {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.621);
 }
 
 input:focus,
@@ -141,6 +155,12 @@ button[type="submit"]:hover {
   textarea {
     font-size: 3.2rem;
   }
+  .form-group{
+    height: 200px !important;
+  }
+  .mensaje {
+    font-size: 19pt !important;
+    }
 }
 
 @media (min-width: 1920px) {
@@ -151,6 +171,13 @@ button[type="submit"]:hover {
   .form-title {
     font-size: 2.5rem;
   }
+  .form-group{
+    height: 130px;
+  }
+  .mensaje {
+  font-size: 16pt;
+  }
+  
 }
 
 @media (min-width: 1440px) {
@@ -164,21 +191,17 @@ button[type="submit"]:hover {
     font-size: 1.8rem;
     width: 35%;
   }
-  
 }
 
 @media (max-width: 768px) {
-  .form-container {
-  }
-
   .form {
     width: 100%;
   }
   .form-title {
     font-size: 2.1rem;
   }
-  #form-leyenda {
-    width: 85% ;
+  .form-leyenda {
+    width: 85%;
     color: #bf7f30;
     font-weight: bold;
     font-style: italic;
@@ -207,5 +230,4 @@ button[type="submit"]:hover {
   button[type="submit"] {
     width: 40%;
   }
-  
 }
