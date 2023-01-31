@@ -53,9 +53,9 @@ export const Footer = () => {
                 <FooterSocial
                     social='Redes sociales'
                     icons={[
-                        { href: '', Icon: FaFacebookSquare },
-                        { href: '', Icon: FaTwitterSquare },
-                        { href: '', Icon: FaInstagram },
+                        { href: '#1', Icon: FaFacebookSquare },
+                        { href: '#2', Icon: FaTwitterSquare },
+                        { href: '#3', Icon: FaInstagram },
                     ]}
                 />
             </div>
