@@ -62,7 +62,7 @@ export const Footer = () => {
             <FooterCopyright
                 copyright='Copyright © Inmo Web Todos los derechos reservados'
                 createdBy='Relizada por'
-                link='https://www.linkedin.com/in/jose-armando-sosa-cardona/'
+                link='https://www.linkedin.com/in/joseasosa24/'
             />
         </footer>
     )
